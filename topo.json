@@ -1,0 +1,220 @@
+{
+  "Switch": [
+    {
+      "name": "c1",
+      "layer": "1"
+    },
+    {
+      "name": "c2",
+      "layer": "1"
+    },
+    {
+      "name": "a3",
+      "layer": "2"
+    },
+    {
+      "name": "a4",
+      "layer": "2"
+    },
+    {
+      "name": "a5",
+      "layer": "2"
+    },
+    {
+      "name": "a6",
+      "layer": "2"
+    },
+    {
+      "name": "e7",
+      "layer": "3"
+    },
+    {
+      "name": "e8",
+      "layer": "3"
+    },
+    {
+      "name": "e9",
+      "layer": "3"
+    },
+    {
+      "name": "e10",
+      "layer": "3"
+    }
+  ],
+  "PC": [
+    {
+      "name": "h1",
+      "IP": "10.0.0.1",
+      "layer": "4"
+    },
+    {
+      "name": "h2",
+      "IP": "10.0.0.2",
+      "layer": "4"
+    },
+    {
+      "name": "h3",
+      "IP": "10.0.0.3",
+      "layer": "4"
+    },
+    {
+      "name": "h4",
+      "IP": "10.0.0.4",
+      "layer": "4"
+    },
+    {
+      "name": "h5",
+      "IP": "10.0.0.5",
+      "layer": "4"
+    },
+    {
+      "name": "h6",
+      "IP": "10.0.0.6",
+      "layer": "4"
+    },
+    {
+      "name": "h7",
+      "IP": "10.0.0.7",
+      "layer": "4"
+    },
+    {
+      "name": "h8",
+      "IP": "10.0.0.8",
+      "layer": "4"
+    },
+    {
+      "name": "h9",
+      "IP": "10.0.0.9",
+      "layer": "5"
+    },
+    {
+      "name": "h10",
+      "IP": "10.0.0.10",
+      "layer": "5"
+    },
+    {
+      "name": "h11",
+      "IP": "10.0.0.11",
+      "layer": "5"
+    },
+    {
+      "name": "h12",
+      "IP": "10.0.0.12",
+      "layer": "5"
+    }
+  ],
+  "Links": [
+    {
+      "source": "c1",
+      "target": "a3"
+    },
+    {
+      "source": "c1",
+      "target": "a4"
+    },
+    {
+      "source": "c1",
+      "target": "a5"
+    },
+    {
+      "source": "c1",
+      "target": "a6"
+    },
+    {
+      "source": "c2",
+      "target": "a3"
+    },
+    {
+      "source": "c2",
+      "target": "a4"
+    },
+    {
+      "source": "c2",
+      "target": "a5"
+    },
+    {
+      "source": "c2",
+      "target": "a6"
+    },
+    {
+      "source": "a3",
+      "target": "e7"
+    },
+    {
+      "source": "a3",
+      "target": "e8"
+    },
+    {
+      "source": "a4",
+      "target": "e7"
+    },
+    {
+      "source": "a4",
+      "target": "e8"
+    },
+    {
+      "source": "a5",
+      "target": "e9"
+    },
+    {
+      "source": "a5",
+      "target": "e10"
+    },
+    {
+      "source": "a6",
+      "target": "e9"
+    },
+    {
+      "source": "a6",
+      "target": "e10"
+    },
+    {
+      "source": "e7",
+      "target": "h1"
+    },
+    {
+      "source": "e7",
+      "target": "h2"
+    },
+    {
+      "source": "e8",
+      "target": "h3"
+    },
+    {
+      "source": "e8",
+      "target": "h4"
+    },
+    {
+      "source": "e9",
+      "target": "h5"
+    },
+    {
+      "source": "e9",
+      "target": "h6"
+    },
+    {
+      "source": "e10",
+      "target": "h7"
+    },
+    {
+      "source": "e10",
+      "target": "h8"
+    },
+    {
+      "source": "e7",
+      "target": "h9"
+    },
+    {
+      "source": "e8",
+      "target": "h10"
+    },
+    {
+      "source": "e9",
+      "target": "h11"
+    },
+    {
+      "source": "e10",
+      "target": "h12"
+    }
+  ]
+}
