@@ -42,15 +42,44 @@
       data(){
           return{
             level: 4,
-            spendTime: 2.78
+            spendTime: 2.78,
           }
       },
       mounted: function () {
-      let myChart = this.$echarts.init(document.getElementById('dsChart'))
+      let myChart = this.$echarts.init(document.getElementById('dsChart'));
       this.initCharts(myChart);
-      setInterval(this.updateCharts, 3000, myChart)
+      this.updateCharts(myChart);
+      setInterval(this.updateCharts, 3000, myChart);
+      setInterval(this._alert, 5000)
     },
     methods: {
+      _alert(){
+        if(this.level <= 3){
+          var _level = "";
+          if(this.level == 1)
+            _level = "危";
+          if(this.level == 2)
+            _level = "差";
+          if(this.level == 3)
+            _level = "中";
+          if(this.level == 4)
+            _level = "良";
+          if(this.level == 5)
+            _level = "优";
+                  this.$message({type: 'alert', message: "当前系统威胁等级为： 【"+_level+"】，\n"+"请注意排查网络潜在隐患！"});
+                  // var cookie = document.cookie.indexOf("alert_message");
+                  // if(cookie == -1)
+                  // {
+                  //   this.$alert("当前威胁等级");
+                  //   var exp = new Date();
+                  //   exp.setTime(exp.getTime() + 10 * 1000);//过期时间
+                  //   document.cookie = "alert_message = yes" + ";expires=" + exp.toGMTString();
+                  // }
+                  // if(cookie >= 0){
+                  //   this.setCookie("alert_message", "", -1);
+                  // }
+                }
+      },
       updateCharts(myChart)
       {
         let _this = this;
@@ -268,7 +297,7 @@
   #grad1 #child5{
     width:20%;
     height:30px;
-    /*font-family:STKaiti;*/
+    font-family:STKaiti;
     font-size:30px;
     color:black;
     text-align:center;
