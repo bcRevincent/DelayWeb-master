@@ -16,7 +16,7 @@
     "echarts-stat": "^1.1.1",
     "element-ui": "^2.6.1",
     "font-awesome": "^4.7.0",
-    "mavon-editor": "^2.7.0",
+    "mavon-editor": "^2.8.2",
     "vue": "^2.5.2",
     "vue-echart": "^1.0.5",
     "vue-echarts": "^4.0.3",
